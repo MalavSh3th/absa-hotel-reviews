@@ -1,0 +1,33 @@
+# Virtual environments
+venv/
+env/
+ENV/
+ABSA/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (add your dataset manually or via DVC)
+*.csv
+*.xlsx
+*.json
+
+# Model artifacts
+*.pkl
+*.joblib
+*.h5
+
+# IDE
+.vscode/
+.idea/
