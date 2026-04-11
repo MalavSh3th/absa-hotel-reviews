@@ -58,7 +58,7 @@ python -m nltk.downloader stopwords wordnet averaged_perceptron_tagger
 
 Then open `hotel_review_absa.ipynb` in Jupyter or Google Colab.
 
-> **Note:** The dataset file is not included in this repo. Add your hotel reviews CSV to the working directory and update the data loading cell accordingly.
+> **Note:** A sample dataset is included at `data/output.csv`. The notebook loads it automatically from that path.
 
 ## Author
 
