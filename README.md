@@ -62,4 +62,4 @@ Then open `hotel_review_absa.ipynb` in Jupyter or Google Colab.
 
 ## Author
 
-Malav Sheth — [LinkedIn](https://linkedin.com/in/malavsheth)
+Malav Sheth — [LinkedIn](https://linkedin.com/in/malavshethdp)
