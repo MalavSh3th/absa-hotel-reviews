@@ -60,6 +60,8 @@ Then open `hotel_review_absa.ipynb` in Jupyter or Google Colab.
 
 > **Note:** A sample dataset is included at `data/output.csv`. The notebook loads it automatically from that path.
 
+> **Try it on restaurant reviews:** A second sample dataset with the same schema is included at `data/restaurant_reviews.csv`. To use it, change `DATA_PATH` near the top of the notebook to `"data/restaurant_reviews.csv"`.
+
 ## Author
 
 Malav Sheth — [LinkedIn](https://linkedin.com/in/malavshethdp)
