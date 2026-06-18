@@ -62,6 +62,30 @@ Then open `hotel_review_absa.ipynb` in Jupyter or Google Colab.
 
 > **Try it on restaurant reviews:** A second sample dataset with the same schema is included at `data/restaurant_reviews.csv`. To use it, change `DATA_PATH` near the top of the notebook to `"data/restaurant_reviews.csv"`.
 
+## CLI Tool
+
+`absa_cli.py` trains aspect and sentiment classifiers from the command line (retrained fresh on every run, no saved model) and can classify new review text immediately:
+
+```bash
+# Train and report metrics only
+python absa_cli.py --data data/output.csv
+
+# Classify one or more reviews
+python absa_cli.py --data data/restaurant_reviews.csv \
+    --review "The food was great but the service was really slow"
+
+# Classify reviews from a file (one per line)
+python absa_cli.py --data data/output.csv --reviews-file my_reviews.txt
+
+# Use Random Forest instead of SVC, and run hyperparameter tuning
+python absa_cli.py --data data/output.csv --model rf --tune
+
+# Save confusion matrix plots
+python absa_cli.py --data data/output.csv --plot --plot-dir ./plots
+```
+
+Run `python absa_cli.py --help` for all options.
+
 ## Author
 
 Malav Sheth — [LinkedIn](https://linkedin.com/in/malavshethdp)
